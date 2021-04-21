@@ -1,5 +1,13 @@
 # Gulp starter
 
+## Commit and Push
+```
+git add .
+git commit -m "first commit"
+git branch -M main
+git push -u origin main
+```
+
 All packages are configured in the package.json.  
 Run `npm install` or manually install the following modules.
 

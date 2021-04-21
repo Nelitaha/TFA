@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projet TFA - Circuits</title>
+    <link href="assets/css/main.css" rel="stylesheet" >
+	<script src="assets/js/main.min.js" defer></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#eb6200">
+	<meta name="msapplication-TileColor" content="#fbfbfb">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body class="bodyMVP">
+    <!-- <h1 class="title title--h1 img--logo"><a class="lien lien--logo" href="mvp.html">Petit pas</a></h1> -->
+    <a class="lien lien--logo" href="mvp.html"><div class="img--logo" href="assets/images/Petit-pas-foncé.svg"></div></a>
+
+    <main class="main">
+        <section class="section section--circuit">
+
+            <form class="filtre-distances">
+                <label for="lenght-select">Distance :</label>
+
+                <select name="lenght" id="lenght-select">
+                    <option value="">--Choisissez un filtre--</option>
+                    <option value="moins-5">Moins de 5 Km</option>
+                    <option value="moins-10">De 5 à 10 Km</option>
+                </select>
+                <button>Filtrer</button>
+            </form>
+
+            <form class="filtre-activites">
+                <label for="activity-select">Activité :</label>
+
+                <select name="activity" id="activity-select">
+                    <option value="">--Choisissez un filtre--</option>
+                    <option value="playground">Plaine de jeux</option>
+                    <option value="forest">Forêt</option>
+                    <option value="monument">Monument</option>
+                    <option value="accessories">Accessoire</option>
+                </select>
+                <button>Filtrer</button>
+            </form>
+
+            <h2 class="title title--h2">Résultats</h2>
+
+            <div class="vignette vignette--liste" data-play="playground" data-lenght="moins-5">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/distance.png" alt="">
+                    <div class="vignette__el vignette__el--details">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent</h3>
+                            <p class="texte title">Plaine de jeux</p>
+                            <p class="texte info">Environs 5,21 Km</p>
+                            <p class="texte info">Environs 1h30</p>
+                        </div>
+                    </div> 
+                </a>
+            </div>
+    
+            <div class="vignette vignette--liste" data-play="forest" data-lenght="moins-10">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent</h3>
+                            <p class="texte title">Forêt</p>
+                            <p class="texte info">Environs 10,21 Km</p>
+                            <p class="texte info">Environs 3h00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="vignette vignette--liste" data-play="playground" data-lenght="moins-10">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent 2</h3>
+                            <p class="texte title">Plaine de jeux</p>
+                            <p class="texte info">Environs 10,21 Km</p>
+                            <p class="texte info">Environs 3h00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="vignette vignette--liste" data-play="forest" data-lenght="moins-5">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent</h3>
+                            <p class="texte title">Forêt</p>
+                            <p class="texte info">Environs 5,21 Km</p>
+                            <p class="texte info">Environs 1h30</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="vignette vignette--liste" data-play="monument" data-lenght="moins-5">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent</h3>
+                            <p class="texte title">Monument(s)</p>
+                            <p class="texte info">Environs 5,21 Km</p>
+                            <p class="texte info">Environs 1h30</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="vignette vignette--liste" data-play="monument" data-lenght="moins-10">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent</h3>
+                            <p class="texte title">Monument(s)</p>
+                            <p class="texte info">Environs 10,21 Km</p>
+                            <p class="texte info">Environs 3h00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="vignette vignette--liste" data-play="accessories" data-lenght="moins-5">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent</h3>
+                            <p class="texte title">Accessoire(s)</p>
+                            <p class="texte info">Environs 5,21 Km</p>
+                            <p class="texte info">Environs 1h30</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="vignette vignette--liste" data-play="accessories" data-lenght="moins-10">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">Le confluent</h3>
+                            <p class="texte title">Accessoire(s)</p>
+                            <p class="texte info">Environs 10,21 Km</p>
+                            <p class="texte info">Environs 3h00</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="vignette vignette--liste" data-play="noFound" data-lenght="noFound">
+                <a class="lien lien--vignette" href="mvp-details.html">
+                    <img class="img img--vignette" src="assets/images/a-venir.png" alt="">
+                    <div class="vignette__el vignette__el--details aVenir">
+                        <div class="bloc">
+                            <h3 class="title title--h3">À venir !</h3>
+                            <p class="texte title">À venir !</p>
+                            <p class="texte info">Environs XX Km</p>
+                            <p class="texte info">Environs XhXX</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    
+    </main>
+
+</body>
+</html>
